@@ -502,7 +502,7 @@ The `echo` command outputs a string of text to the terminal.
 
 ### 1. Basic Output
 
-```bash
+#bash
 echo hello
 
 # 📁 Filesystem Hierarchy Standard (FHS) & Linux Command Guide
@@ -517,30 +517,30 @@ echo hello
 
 | Directory | Description |
 |----------|-------------|
-| `/home`  | Contains personal directories for users. |
-| `/bin`   | Stores essential binary/executable files. |
-| `/etc`   | System configuration files. |
-| `/tmp`   | Temporary files (accessible by all users). |
-| `/mnt`   | Mount point for external storage like USBs. |
+| /home  | Contains personal directories for users. |
+| /bin   | Stores essential binary/executable files. |
+| /etc   | System configuration files. |
+| /tmp   | Temporary files (accessible by all users). |
+| /mnt   | Mount point for external storage like USBs. |
 
 ---
 
 ## 🧭 Understanding Paths
 
 ### Absolute Path
-- Starts from the root `/`.
-- Example: `/home/analyst/projects`
+- Starts from the root /.
+- Example: /home/analyst/projects
 
 ### Relative Path
 - Based on current working directory.
 - Symbols:
-  - `.` = current directory
-  - `..` = parent directory
-- Example: `../projects`
+  - . = current directory
+  - .. = parent directory
+- Example: ../projects
 
 ### Tilde `~`
 - Represents the user's home directory.
-- Example: `~/logs` = `/home/username/logs`
+- Example: ~/logs = /home/username/logs
 
 ---
 
@@ -548,11 +548,11 @@ echo hello
 
 | Command | Description | Example |
 |---------|-------------|---------|
-| `pwd` | Print working directory (absolute path). | `/home/analyst` |
-| `ls` | List contents of directory. | `ls`, `ls projects`, `ls /home/analyst` |
-| `cd` | Change directory. | `cd ..`, `cd /home/analyst/logs` |
+| pwd | Print working directory (absolute path). | /home/analyst |
+| ls | List contents of directory. | ls, ls projects, ls /home/analyst |
+| cd | Change directory. | cd .., cd /home/analyst/logs |
 
-> 💡 Use `whoami` to print your current username.
+> 💡 Use whoami to print your current username.
 
 ---
 
@@ -560,20 +560,20 @@ echo hello
 
 | Command | Description | Example |
 |---------|-------------|---------|
-| `cat` | View full file contents. | `cat updates.txt` |
-| `head` | View first 10 lines. | `head updates.txt` |
-| `head -n 5` | View first 5 lines. | `head -n 5 updates.txt` |
-| `tail` | View last 10 lines. | `tail updates.txt` |
-| `less` | Paginated view of file contents. | `less updates.txt` |
+| cat | View full file contents. | cat updates.txt |
+| head | View first 10 lines. | head updates.txt |
+| head -n 5 | View first 5 lines. | head -n 5 updates.txt |
+| tail | View last 10 lines. | tail updates.txt |
+| less | Paginated view of file contents. | less updates.txt |
 
 ### `less` Keyboard Controls
 
 | Key | Action |
 |-----|--------|
-| `Space` | Next page |
-| `b` | Previous page |
-| `↓ / ↑` | Move one line |
-| `q` | Quit `less` |
+| Space | Next page |
+| b | Previous page |
+| ↓ / ↑ | Move one line |
+| q | Quit less |
 
 ---
 
@@ -585,8 +585,3 @@ echo hello
 - Use commands efficiently to access logs, configs, and other critical files.
 
 ---
-
-> ✅ **Pro Tip**: Learn more about the FHS with the command:
-```bash
-man hier
-
